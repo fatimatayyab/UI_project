@@ -1,0 +1,4 @@
+#Fri Oct 18 21:26:27 PKT 2024
+base.0=D\:\\fatima laptop data\\fatima\\flutter\\test\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
