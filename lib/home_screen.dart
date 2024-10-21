@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/components/activities.dart';
-import 'package:test/components/aunctions.dart';
+import 'package:test/components/auctions.dart';
 import 'package:test/components/icon_label.dart';
 import 'package:test/components/invite_banner.dart';
 import 'package:test/components/live_shows.dart';
@@ -17,6 +17,12 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int _currentIndex = 0; 
+   void _onItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
    void _onSearchChanged(String value) {
     // Handle the search input changes here
    // Example of handling search input
@@ -80,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
                const SizedBox(height: 30.0,),
                const UpcomingShowsScreen(),
-               const AunctionsScreen(),
+               const AuctionsScreen(),
                const Trending(),
                Padding(
                     padding:  EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.05),
@@ -97,6 +103,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
       ),
          bottomNavigationBar: BottomNavigationBar(
+           currentIndex: _currentIndex, // Set the current index
+        onTap: _onItemTapped, 
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -117,6 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline_sharp),
             label: 'Profile',
+           
           ),
         ],
         selectedItemColor: const Color.fromARGB(255, 201, 33, 243), // Color for selected item

@@ -6,7 +6,7 @@ class InviteBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0), // Reduced vertical padding
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0), 
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

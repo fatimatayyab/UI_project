@@ -30,7 +30,7 @@ class _SellerWidgetState extends State<SellerWidget> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Handle show all action
+             
                 },
                 child: const Text(
                   'Show All',

@@ -11,8 +11,8 @@ class IconLabelWidget extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(icon, size: 20), // You can adjust the size as needed
-        const SizedBox(height: 4), // Space between icon and label
+        Icon(icon, size: 20), 
+        const SizedBox(height: 4),
         Text(label, style: const TextStyle(fontSize: 11)), // Customize text style as needed
       ],
     );

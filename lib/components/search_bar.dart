@@ -38,7 +38,7 @@ enabledBorder: OutlineInputBorder(
                         child: Image.asset(
                           'assets/images/magnifying-glass-icon.png',
                            width: 24.0, // Set a size for the icon
-                    height: 24.0, // Replace with your custom icon path
+                    height: 24.0, 
                         ),
                         
                       ),

@@ -34,7 +34,7 @@ class _TrendingState extends State<Trending> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween, // Aligns content to the left and right
+            mainAxisAlignment: MainAxisAlignment.spaceBetween, 
             children: [
               const Text(
                 'Trending', // Change the title if needed
@@ -60,9 +60,9 @@ class _TrendingState extends State<Trending> {
               ),
             ],
           ),
-          const SizedBox(height: 10), // Adds spacing between the Row and ListView
+          const SizedBox(height: 10), 
           SizedBox(
-            height: 250, // Adjust the height based on your design
+            height: 250, 
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: trendingsData.length, // Number of items

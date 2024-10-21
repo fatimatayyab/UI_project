@@ -5,14 +5,14 @@ import 'package:test/models/auctions_model.dart';
 
 
 
-class AunctionsScreen extends StatefulWidget {
-  const AunctionsScreen({super.key});
+class AuctionsScreen extends StatefulWidget {
+  const AuctionsScreen({super.key});
 
   @override
-  State<AunctionsScreen> createState() => _AunctionsScreenState();
+  State<AuctionsScreen> createState() => _AuctionsScreenState();
 }
 
-class _AunctionsScreenState extends State<AunctionsScreen> {
+class _AuctionsScreenState extends State<AuctionsScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
